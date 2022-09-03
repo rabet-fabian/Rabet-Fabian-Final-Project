@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link href="cart.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link href="footer.css" rel="stylesheet" />
+    <link href="back-top.css" rel="stylesheet" />
+
+    <style>
+      .container {
+        max-width: 100vw;
+      }
+
+      .logo {
+        display: flex;
+      }
+
+      .navbar {
+        background-color: #6c757d;
+      }
+
+      ul.navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container.justify-content-center {
+        max-height: 100px;
+      }
+
+      body {
+        font-family: sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-expand-xxl">
+      <div
+        class="container-fluid"
+        style="padding-left: 5px; padding-right: 5px"
+      >
+        <h2 class="text-capitalize">
+          <a class="navbar-brand" href="main_page.html">Armani Watches</a>
+        </h2>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul
+            class="navbar navbar-nav justify-content-evenly offset-xl-4 me-auto mb-3 mb-lg-0"
+            style="padding-left: 60px"
+          >
+            <div>
+              <button class="btn">
+                <li class="nav-item">
+                  <a
+                    class="nav-link acive"
+                    aria-current="page"
+                    href="shop_page.html"
+                    id="button-link"
+                    ><b style="color: #000">Watches</b></a
+                  >
+                </li>
+              </button>
+
+              <button class="btn">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    href="contact_us.html"
+                    id="button-link"
+                    ><b style="color: #000">Cart</b></a
+                  >
+                </li>
+              </button>
+
+              <button class="btn">
+                <li class="nav-item">
+                  <a class="nav-link active" href="login.html" id="button-link"
+                    ><b style="color: #000">Register</b></a
+                  >
+                </li>
+              </button>
+            </div>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-1"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-light" type="submit">
+              <div>
+                <svg
+                  style="display: flex"
+                  width="20px"
+                  height="20px"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                >
+                  <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                  <path
+                    fill="#000"
+                    d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"
+                  />
+                </svg>
+              </div>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="CartContainer">
+        <div class="Header">
+          <h3 class="Heading">Shopping Cart</h3>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="card" style="width: 20rem">
+                <img
+                  class="card-img-top"
+                  src="men-watches.jpeg"
+                  alt="Card image cap"
+                />
+                <div class="card-block">
+                  <h4 class="card-title">Emporio Armani (AR70002)</h4>
+                  <p class="card-text">Price: €350</p>
+                  <a
+                    href="#"
+                    data-name="Emporio Armani (AR70002)"
+                    data-price="€350"
+                    class="add-to-cart btn btn-primary"
+                    >Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem">
+                <img
+                  class="card-img-top"
+                  src="Women-watches.jpeg"
+                  alt="Card image cap"
+                />
+                <div class="card-block">
+                  <h4 class="card-title">Emperio Armani (AR60044)</h4>
+                  <p class="card-text">Price: €230</p>
+                  <a
+                    href="#"
+                    data-name="Emperio Armani (AR60044)"
+                    data-price="€230"
+                    class="add-to-cart btn btn-primary"
+                    >Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem">
+                <img
+                  class="card-img-top"
+                  src="Women-watches(1).jpeg"
+                  alt="Card image cap"
+                />
+                <div class="card-block">
+                  <h4 class="card-title">Emporio Armani (AR11355)</h4>
+                  <p class="card-text">Price: €210</p>
+                  <a
+                    href="#"
+                    data-name="Emporio Armani (AR11355)"
+                    data-price="€210"
+                    class="add-to-cart btn btn-primary"
+                    >Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">
+          <b>Back-To-Top</b>
+        </button>
+        <div
+          class="modal fade"
+          id="cart"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <table class="show-cart table"></table>
+                <div>Total price: $<span class="total-cart"></span></div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button type="button" class="btn btn-primary">Order now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav
+      class="nav"
+      style="
+        display: flex;
+        justify-content: right;
+        position: relative;
+        top: 10px;
+        right: 20px;
+      "
+    >
+      <div class="row">
+        <div class="col">
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-toggle="modal"
+            data-target="#cart"
+          >
+            Cart (<span class="total-count"></span>)</button
+          ><button class="clear-cart btn btn-danger">Clear Cart</button>
+        </div>
+      </div>
+    </nav>
+
+    <div id="footer" style="margin-top: 110px; gap: 10px;">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Contact</a>
+      <a href="#">Your Orders</a>
+      <span style="display: flex; justify-content: left"><b><u>Customer service:</u></b></span><a href="#">(888-312-569)</a>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="back-top.js"></script>
+  </body>
+</html>
